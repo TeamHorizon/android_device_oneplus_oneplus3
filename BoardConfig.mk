@@ -228,8 +228,12 @@ WIFI_DRIVER_MODULE_NAME := "wlan"
 WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
-#Dexpreopt
+#OPTIMIZATIONS
 WITH_DEXPREOPT=true
+O3_OPTS := true
+POLLY_OPTS := true
+GRAPHITE_OPTS := true
+#STRICT_ALIASING=true
 
 # inherit from the proprietary version
 -include vendor/oneplus/oneplus3/BoardConfigVendor.mk
